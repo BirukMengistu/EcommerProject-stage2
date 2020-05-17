@@ -5,7 +5,8 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage  from './pages/shop/shop.component.jsx';
-
+import Header from './components/header/header-comp';
+import SignInAndSignUp from './pages/sign/sign-in-and-sign-up-comp';
 const HatsPage = () => (
   <div>  
     <h1>HatsPage</h1>
@@ -29,10 +30,12 @@ console.log(props);
 function App() {
   return (
     <div>
+     <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/hats' component={ShopPage} />
         <Route path='/hats' component={HatsPage} />
+        <Route path='/Signin' component={SignInAndSignUp} />
         <Route  path ='/hats/:contId' component={Topic} />
       </Switch>
     </div>
