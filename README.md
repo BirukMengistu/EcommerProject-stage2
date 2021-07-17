@@ -1,4 +1,4 @@
-## Lesson-5
+## version 5
 
 Going over the concept of higher order components through use of the withRouter HOC from react-router-dom.
 
